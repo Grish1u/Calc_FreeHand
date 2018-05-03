@@ -1,0 +1,80 @@
+Test in: Main
+
+"""while True:
+	user_input = input('\nEnter your equasion: ') 
+	# Are all characters are legal?
+	print()
+	if correct_chars(user_input):
+		print ('correct_chars - True')
+	else:
+		print ('correct_chars - False')
+	# Are parenthesis balanced?
+	print()
+	if check_bal_parenthesis(user_input):
+		print('Balanced parenthesis - True')
+	else:
+		print('Balanced parenthesis - False')
+	# Operator symbol repetition
+	print()
+	if check_repeated_symbols(user_input):
+		print('Symbol repetition - Legal')
+	else:
+		print('Symbol repetition - Illegal')
+	# Symbols around pars
+	print()
+	print('Case before (')
+	check_symbols_around_asymbol(user_input, '(', True)
+	print()
+	print('Case before )')
+	check_symbols_around_asymbol(user_input, ')', True)
+	print()
+	print('Case after (')
+	check_symbols_around_asymbol(user_input, '(', False)
+	print()
+	print('Case after )')
+	check_symbols_around_asymbol(user_input, ')', False)
+	input('Press enter: ')"""
+
+
+Test in: symbols_repeated
+
+"""while True:
+	inp = input('::: ')
+	if check_repeated_symbols(inp):
+		print('Legal')
+	else: 
+		print('Illegal')
+	input('again: ')"""
+
+
+Test in: symbols_around_pars
+
+"""while True:
+	inp = input('examine: ')
+	print()
+	print('Case before (')
+	check_symbols_around_asymbol(inp, '(', True)
+	print()
+	print('Case before )')
+	check_symbols_around_asymbol(inp, ')', True)
+	print()
+	print('Case after (')
+	check_symbols_around_asymbol(inp, '(', False)
+	print()
+	print('Case after )')
+	check_symbols_around_asymbol(inp, ')', False)
+	input()
+"""
+
+Pseudo code in: bal_parenthesis
+
+	# PSEUDO CODE 
+	# create STACK 
+	# SCAN the expression from left to right
+	# if expresion[index i] is opening par:
+	#	push[i] to the STACK
+	# elif expresion[index i] is closing par:
+	# 	if STACK is empty OR TOP not pair with expression[index i] <- this is when we have different types of parenthesis
+	#		return False
+	# else POP
+	# when scanning is over if stack empty - return True, else return False

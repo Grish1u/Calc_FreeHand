@@ -16,15 +16,20 @@ def correct_chars(given_string):
 		Returns - True if no errors found, False if an error found
 
 	"""
+	errors = [] # list containing the incorrect chars
 	allowed_chars = [] # list of allowed chars
+	
 	add_str_digits(allowed_chars)
 	add_non_numeric_symbols(allowed_chars)
+	
 	for char in given_string:
 		#print (char)
 		if char not in allowed_chars:
-			print('char ', char, ' not allowed')
-			return False # it returns when it finds the first symbol- can be improved so it acknoledges all of the illegal symbols
-		else:
-			continue
-	return True
-# 2/ - Check whethe
+			print('Char ', char, ' not allowed')
+			errors.append(char)
+	
+	if len(errors) > 0:
+		print('Illegal characters: ', str(errors))
+		return False
+	else:
+		return True

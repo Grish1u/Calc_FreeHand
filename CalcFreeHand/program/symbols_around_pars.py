@@ -66,21 +66,3 @@ def check_symbols_around_asymbol(expression_string, symbol_char, before_bool):
 		return False
 	else:
 		return True
-
-# TESTING
-"""while True:
-	inp = input('examine: ')
-	print()
-	print('Case before (')
-	check_symbols_around_asymbol(inp, '(', True)
-	print()
-	print('Case before )')
-	check_symbols_around_asymbol(inp, ')', True)
-	print()
-	print('Case after (')
-	check_symbols_around_asymbol(inp, '(', False)
-	print()
-	print('Case after )')
-	check_symbols_around_asymbol(inp, ')', False)
-	input()
-"""

@@ -23,12 +23,3 @@ def check_repeated_symbols(expression):
 		if char != ' ':
 			prev = char
 	return True
-
-# Testing
-"""while True:
-	inp = input('::: ')
-	if check_repeated_symbols(inp):
-		print('Legal')
-	else: 
-		print('Illegal')
-	input('again: ')"""

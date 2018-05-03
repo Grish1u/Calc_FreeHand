@@ -36,13 +36,3 @@ def check_bal_parenthesis(expression):
 		print(unbal_par.toString())
 		return False
 	
-	# PSEUDO CODE 
-	# create STACK 
-	# SCAN the expression from left to right
-	# if expresion[index i] is opening par:
-	#	push[i] to the STACK
-	# elif expresion[index i] is closing par:
-	# 	if STACK is empty OR TOP not pair with expression[index i] <- this is when we have different types of parenthesis
-	#		return False
-	# else POP
-	# when scanning is over if stack empty - return True, else return False
