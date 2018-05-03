@@ -1,7 +1,7 @@
 def check_repeated_symbols(expression):
 	"""
 		TODO -
-		
+			Error Handling arg1
 		Args-
 			arg1 - the string examined
 		

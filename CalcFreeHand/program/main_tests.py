@@ -1,5 +1,18 @@
 # DEVELOPER : Grishak
 # START DATE 18/4/2018
+
+"""
+		TODO:
+			- better user interface
+			- a GUI
+
+		Assumes - there are imported functions to determine whether the expression that is 
+			given by the user can be tought of a mathematical expression
+		
+		Description - This is the main method for CalcFreeHand program.
+		
+	"""
+
 from correct_chars import correct_chars
 from bal_parenthesis import check_bal_parenthesis
 from symbols_repeated import check_repeated_symbols

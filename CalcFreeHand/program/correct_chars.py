@@ -2,10 +2,8 @@ from tools import add_str_digits, add_non_numeric_symbols
 
 def correct_chars(given_string):
 	"""
-		TODO - perform refractor:
-			make a list with incorect chars - for each incorrect - add it to the list
-			at the end - if list > 0 return false else return true
-		
+		TODO:
+			Error handling on arg1
 		Args-
 			arg1 - the string examined 
 		

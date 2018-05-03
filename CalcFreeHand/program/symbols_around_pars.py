@@ -1,6 +1,8 @@
 from tools import add_str_digits
 def check_symbols_around_asymbol(expression_string, symbol_char, before_bool):
 	"""
+		TODO:
+			Do error handling for arg1
 		Args-
 			arg1 - the string examined
 			arg2 - can be either '(' or ')'
